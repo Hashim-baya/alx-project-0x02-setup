@@ -1,13 +1,14 @@
+import React from 'react';
+import Link from 'next/link';
 const Header: React.FC = () => {
   return (
     <header className="bg-gray-800 text-white p-4">
       <h1 className="text-2xl font-bold">My Application</h1>
       <nav>
-        <ul className="flex space-x-4">
-          <li><a href="/" className="hover:underline">Home</a></li>
-          <li><a href="/about" className="hover:underline">About</a></li>
-          <li><a href="/contact" className="hover:underline">Contact</a></li>
-        </ul>
+       <ul className='flex space-x-4 list-none'>
+        <Link href="/about"><li>About</li></Link>
+        <Link href="/home"><li>Home</li></Link> 
+       </ul>
       </nav>
     </header>
   );
