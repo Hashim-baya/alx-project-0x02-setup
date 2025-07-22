@@ -1,8 +1,10 @@
+import React from 'react';
+import Card from '@/components/layout/common/Card';
 const Home: React.FC = () => {
     return (
         <div>
             <h1>Home Page</h1>
-            <p>This is the main entry point of our application.</p>
+            <Card title='Card 1' content='This is the content of Card 1' />
         </div>
     )
 }
