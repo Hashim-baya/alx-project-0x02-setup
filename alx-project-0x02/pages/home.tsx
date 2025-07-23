@@ -17,10 +17,13 @@ const Home: React.FC = () => {
         <div>
             <Header />
             <main>
-                <button onClick={() => setIsModalOpen(true)} className="bg-blue-500 text-white px-4 py-2 rounded">
-                    Add Post
-                </button>
-                <h1>Home Page</h1>
+                <div className='p-4 m-4 bg-amber-50 rounded-lg shadow-md flex justify-between items-center'>
+                    <h1>Home Page</h1>
+                    <button onClick={() => setIsModalOpen(true)} className="bg-blue-500 text-white px-4 py-2 rounded">
+                        Add Post
+                    </button>
+                </div>
+                
                 <Card title='Card 1' content='This is the content of Card 1' />
             </main>
 
